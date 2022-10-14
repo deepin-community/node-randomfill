@@ -1,0 +1,53 @@
+node-randomfill (1.0.4-5) unstable; urgency=medium
+
+  * Team upload
+  * Update standards version to 4.6.0, no changes needed.
+  * Add "Rules-Requires-Root: no"
+  * Add debian/gbp.conf
+  * Fix GitHub tags regex
+  * Use dh-sequence-nodejs for test & install
+
+ -- Yadd <yadd@debian.org>  Sun, 26 Sep 2021 15:41:12 +0200
+
+node-randomfill (1.0.4-4) unstable; urgency=medium
+
+  * Set upstream metadata fields: Bug-Database, Bug-Submit, Repository,
+    Repository-Browse.
+  * Update standards version to 4.5.0, no changes needed.
+  * Remove constraints unnecessary since buster:
+    + Build-Depends: Drop versioned constraint on node-randombytes,
+      node-safe-buffer, node-tap, node-tape and nodejs.
+    + node-randomfill: Drop versioned constraint on node-randombytes,
+      node-safe-buffer and nodejs in Depends.
+  * Bump debhelper from old 12 to 13.
+  * Update standards version to 4.5.1, no changes needed.
+
+ -- Debian Janitor <janitor@jelmer.uk>  Sun, 29 Aug 2021 02:16:21 +0100
+
+node-randomfill (1.0.4-3) unstable; urgency=medium
+
+  * Move to /usr/share
+  * Bump debhelper and policy (no changes)
+
+ -- Bastien Roucariès <rouca@debian.org>  Fri, 20 Sep 2019 17:18:39 +0200
+
+node-randomfill (1.0.4-2) unstable; urgency=medium
+
+  * Bump policy (no changes)
+  * Move to salsa
+
+ -- Bastien Roucariès <rouca@debian.org>  Thu, 31 May 2018 10:05:01 +0200
+
+node-randomfill (1.0.4-1) unstable; urgency=medium
+
+  * New upstream version
+  * Fix lintian warnings
+  * Bump compat, and policy.
+
+ -- Bastien Roucariès <rouca@debian.org>  Thu, 22 Feb 2018 14:38:22 +0100
+
+node-randomfill (1.0.3-1) unstable; urgency=low
+
+  * Initial release (Closes: #883398)
+
+ -- Bastien Roucariès <rouca@debian.org>  Fri, 08 Dec 2017 13:57:26 +0100

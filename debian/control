@@ -1,0 +1,31 @@
+Source: node-randomfill
+Section: javascript
+Priority: optional
+Maintainer: Debian Javascript Maintainers <pkg-javascript-devel@lists.alioth.debian.org>
+Uploaders: Bastien Roucariès <rouca@debian.org>
+Build-Depends: debhelper-compat (= 13)
+ , dh-sequence-nodejs
+ , node-randombytes <!nocheck>
+ , node-safe-buffer <!nocheck>
+ , node-tap <!nocheck>
+ , node-tape <!nocheck>
+Standards-Version: 4.6.0
+Vcs-Browser: https://salsa.debian.org/js-team/node-randomfill
+Vcs-Git: https://salsa.debian.org/js-team/node-randomfill.git
+Homepage: https://github.com/crypto-browserify/randombytes
+Testsuite: autopkgtest-pkg-nodejs
+Rules-Requires-Root: no
+
+Package: node-randomfill
+Architecture: all
+Depends: ${misc:Depends}
+ , node-randombytes
+ , node-safe-buffer
+Description: Pure javascript buffer filling with random value
+ This package allows one to fill a buffer with random value using well
+ known Node.js API in browser context
+ .
+ This a dependency of browserify. Browserify is a javaScript tool that allows
+ developers to write Node.js-style modules that compile for use in the browser.
+ .
+ Node.js is an event-based server-side JavaScript engine
